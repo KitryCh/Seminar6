@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public interface UserView {
+import java.util.List;
+
+public interface UserView<T extends User> {
+    void sendOnConsole(List<T> list);
 }
